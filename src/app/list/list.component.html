@@ -1,0 +1,286 @@
+<div class="">
+  <div class="container">
+    <div class="row gap-5">
+      <!-- First Row with 8 columns width -->
+      <div class="col-md-7">
+        <div class="row">
+          <!-- First Column -->
+          <div class="col-md-3 data-item">
+            <div class="item bg-danger-subtle p-4 rounded-3">
+              <div class="d-flex justify-content-evenly align-items-center text-muted">
+                <p class="fs-4 fw-semibold">71,028</p><small>EGP</small>
+              </div>
+              <span class="fw-semibold text-muted fs-6">Total Value</span>
+              <div class="d-flex align-items-center dot3 gap-2">
+                <i class="fas fa-sort-down"></i><span>2%</span>
+                
+              </div>
+            </div>
+          </div>
+          <!-- Second Column -->
+          <div class="col-md-3 data-item">
+            <div class="item bg-white p-4 rounded-3">
+              <div class="d-flex justify-content-evenly align-items-center text-muted">
+                <p class="fs-4 fw-semibold">20,000</p><small>m <sup>3</sup></small>
+              </div>
+              <span class="fw-semibold text-muted fs-6">Total Sales</span>
+              <div class="d-flex align-items-center dot2 gap-2">
+                <i class="fas fa-sort-up mt-2"></i><span>50 m <sup>3</sup></span>
+              </div>
+            </div>
+          </div>
+          <!-- Third Column -->
+          <div class="col-md-3 data-item">
+            <div class="item bg-white p-4 rounded-3">
+              <div class="d-flex justify-content-evenly align-items-center text-muted">
+                <p class="fs-4 fw-semibold">20,000</p><small>m <sup>3</sup></small>
+              </div>
+              <span class="fw-semibold text-muted fs-6">Avg Sales</span>
+              <div class="d-flex align-items-center dot3 gap-2">
+                <i class="fas fa-sort-down"></i><span>50 m <sup>3</sup></span>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth Column -->
+          <div class="col-md-3 data-item">
+            <div class="item bg-white p-3 rounded-3">
+              <span class="d-flex justify-content-evenly align-items-center text-muted">
+                <p class="fs-4 fw-semibold mb-1 text-start">1567</p>
+              </span>
+              <span class="fw-semibold text-muted fs-6">Total Transactions Count</span>
+              <div class="d-flex align-items-center dot2 gap-2">
+                <i class="fas fa-sort-up mt-2"></i><span>20</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col-md-12 d-flex justify-content-end align-items-center center">
+            <ul class="nav nav-pills bg-body-secondary   d-flex justify-content-center rounded-pill " id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active rounded-pill" id="graph-tab" data-bs-toggle="tab" data-bs-target="#graph" type="button" role="tab" aria-controls="graph" aria-selected="true"><i class="fas fa-signal"></i> GRAPH</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill" id="list-tab" data-bs-toggle="tab" data-bs-target="#list" type="button" role="tab" aria-controls="list" aria-selected="false"><i class="fa fa-list-alt me-2"></i> LIST</button>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col-md-12">
+            <div class="tab-content" id="pills-tabContent">
+
+
+
+              <div class="tab-pane fade show active bg-white" id="graph" role="tabpanel" aria-labelledby="graph-tab">
+                <div class="">
+                  <div class="row">
+                    <div class="col-12 position-relative ">
+                      <ngx-chartjs
+                      class="chart"
+                      [data]="chartData"
+                      [options]="chartOptions"
+                      type="bar">
+                    </ngx-chartjs>
+                    
+                    <div class="progress my-3" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar"></div>
+                    </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              
+              
+              <div class="tab-pane fade mt-3 d-flex flex-column gap-5 bg-transparent" id="list" role="tabpanel" aria-labelledby="list-tab">
+                <div class="row bg-white p-3 rounded-3">
+                  <div class="col-md-12">
+                    <div class="big-div d-flex justify-content-between px-3 align-items-center">
+                      <div class="item d-flex align-items-center gap-2">
+                        <i class="fas fa-circle dot align-self-end p-2 mb-2"></i>
+                        <img src="./assets/img/station.PNG" class="p-0 m-0" alt="Station Image">
+                        <p class="align-baseline text-uppercase mt-2 fw-semibold text-muted">Station <br> Name Dummy</p>
+                      </div>
+
+                      <div class="dropdown">
+                        <a class="text-black" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,26">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-custom">
+                            <li class="dropdown-header fw-semibold">View Properties:</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <div class="d-flex justify-content-between">
+                                <div class="links pe-2">
+                                    <li><a class="dropdown-item"><i class="fas fa-square dot me-2"></i>Total Sales</a></li>
+                                    <li><a class="dropdown-item"><i class="fas fa-square dot me-2"></i>Total Transaction</a></li>
+                                    <li><a class="dropdown-item"><i class="fas fa-square dot me-2"></i>Total Value</a></li>
+                                </div>
+                                <div class="links ps-2">
+                                    <li><a class="dropdown-item"><i class="far fa-square dot me-2"></i>Max Transaction count per hour</a></li>
+                                    <li><a class="dropdown-item"><i class="far fa-square dot me-2"></i>Max Transaction count date-time</a></li>
+                                    <li><a class="dropdown-item"><i class="far fa-square dot me-2"></i>Compressor status</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr class="">
+
+                  <div class="d-flex flex-column gap-3 data text-center">
+                    <div class="row gx-4">
+                      <div class="col-md-2 fw-semibold ">total Sales</div>
+                      <div class="col-md-2 text-muted">62,721 m <sup>3</sup></div>
+                      <div class="col-md-2 fw-semibold ">compression State</div>
+                      <div class="col-md-2 text-muted">compression</div>
+                      <div class="col-md-2 fw-semibold ">Max Transaction/hour</div>
+                      <div class="col-md-2 text-muted">20</div>
+                    </div>
+
+                    <div class="row gx-4">
+                      <div class="col-md-2 fw-semibold ">total value </div>
+                      <div class="col-md-2 text-muted">550 <small>EGP</small></div>
+                      <div class="col-md-2 fw-semibold ">Total Transaction Count</div>
+                      <div class="col-md-2 text-muted">5161</div>
+                      <div class="col-md-2 fw-semibold ">Max Transaction Date Time</div>
+                      <div class="col-md-2 text-muted">8-1-2021</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row bg-white p-3 rounded-3 my-3">
+                  <div class="col-md-12">
+                    <div class="big-div d-flex justify-content-between px-3 align-items-center">
+                      <div class="item d-flex align-items-center gap-2">
+                        <i class="fas fa-circle dot align-self-end p-2 mb-2"></i>
+                        <img src="./assets/img/station.PNG" class="p-0 m-0" alt="Station Image">
+                        <p class="align-baseline text-uppercase mt-2 fw-semibold text-muted">Station <br> Name Dummy</p>
+                      </div>
+
+                      <div class="dropdown">
+                        <a class="text-black" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,26">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-custom">
+                            <li class="dropdown-header fw-semibold">View Properties:</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <div class="d-flex justify-content-between">
+                                <div class="links pe-2">
+                                    <li><a class="dropdown-item"><i class="fas fa-square dot me-2"></i>Total Sales</a></li>
+                                    <li><a class="dropdown-item"><i class="fas fa-square dot me-2"></i>Total Transaction</a></li>
+                                    <li><a class="dropdown-item"><i class="fas fa-square dot me-2"></i>Total Value</a></li>
+                                </div>
+                                <div class="links ps-2">
+                                    <li><a class="dropdown-item"><i class="far fa-square dot me-2"></i>Max Transaction count per hour</a></li>
+                                    <li><a class="dropdown-item"><i class="far fa-square dot me-2"></i>Max Transaction count date-time</a></li>
+                                    <li><a class="dropdown-item"><i class="far fa-square dot me-2"></i>Compressor status</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr class="">
+
+                  <div class="d-flex flex-column gap-3 data text-center">
+                    <div class="row gx-4">
+                      <div class="col-md-2 fw-semibold ">total Sales</div>
+                      <div class="col-md-2 text-muted">62,721 m <sup>3</sup></div>
+                      <div class="col-md-2 fw-semibold ">compression State</div>
+                      <div class="col-md-2 text-muted">compression</div>
+                      <div class="col-md-2 fw-semibold ">Max Transaction/hour</div>
+                      <div class="col-md-2 text-muted">20</div>
+                    </div>
+
+                    <div class="row gx-4">
+                      <div class="col-md-2 fw-semibold ">total value </div>
+                      <div class="col-md-2 text-muted">550 <small>EGP</small></div>
+                      <div class="col-md-2 fw-semibold ">Total Transaction Count</div>
+                      <div class="col-md-2 text-muted">5161</div>
+                      <div class="col-md-2 fw-semibold ">Max Transaction Date Time</div>
+                      <div class="col-md-2 text-muted">8-1-2021</div>
+                    </div>
+                  </div>
+
+                </div>
+                
+
+                <div class="row bg-white p-3 rounded-3">
+                  <div class="col-md-12">
+                    <div class="big-div d-flex justify-content-between px-3 align-items-center">
+                      <div class="item d-flex align-items-center gap-2">
+                        <i class="fas fa-circle dot align-self-end p-2 mb-2"></i>
+                        <img src="./assets/img/station.PNG" class="p-0 m-0" alt="Station Image">
+                        <p class="align-baseline text-uppercase mt-2 fw-semibold text-muted">Station <br> Name Dummy</p>
+                      </div>
+
+                      <div class="dropdown">
+                        <a class="text-black" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,26">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-custom">
+                            <li class="dropdown-header fw-semibold">View Properties:</li>
+                            <li><hr class="dropdown-divider"></li>
+                            <div class="d-flex justify-content-between">
+                                <div class="links pe-2">
+                                    <li><a class="dropdown-item"><i class="fas fa-square dot me-2"></i>Total Sales</a></li>
+                                    <li><a class="dropdown-item"><i class="fas fa-square dot me-2"></i>Total Transaction</a></li>
+                                    <li><a class="dropdown-item"><i class="fas fa-square dot me-2"></i>Total Value</a></li>
+                                </div>
+                                <div class="links ps-2">
+                                    <li><a class="dropdown-item"><i class="far fa-square dot me-2"></i>Max Transaction count per hour</a></li>
+                                    <li><a class="dropdown-item"><i class="far fa-square dot me-2"></i>Max Transaction count date-time</a></li>
+                                    <li><a class="dropdown-item"><i class="far fa-square dot me-2"></i>Compressor status</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr class="">
+
+                  <div class="d-flex flex-column gap-3 data text-center">
+                    <div class="row gx-4">
+                      <div class="col-md-2 fw-semibold ">total Sales</div>
+                      <div class="col-md-2 text-muted">62,721 m <sup>3</sup></div>
+                      <div class="col-md-2 fw-semibold ">compression State</div>
+                      <div class="col-md-2 text-muted">compression</div>
+                      <div class="col-md-2 fw-semibold ">Max Transaction/hour</div>
+                      <div class="col-md-2 text-muted">20</div>
+                    </div>
+
+                    <div class="row gx-4">
+                      <div class="col-md-2 fw-semibold ">total value </div>
+                      <div class="col-md-2 text-muted">550 <small>EGP</small></div>
+                      <div class="col-md-2 fw-semibold ">Total Transaction Count</div>
+                      <div class="col-md-2 text-muted">5161</div>
+                      <div class="col-md-2 fw-semibold ">Max Transaction Date Time</div>
+                      <div class="col-md-2 text-muted">8-1-2021</div>
+                    </div>
+                  </div>
+
+                </div>
+                
+              </div>
+
+              <!-- Repeat the section for other stations as necessary -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-md-4">
+
+        <!-- Add your sidebar components here -->
+         <app-spider></app-spider>
+      </div>
+    </div>
+  </div>
+</div>

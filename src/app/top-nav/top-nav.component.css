@@ -1,0 +1,40 @@
+
+.nav-item img{
+  width: 40px !important;
+}
+.dot
+{
+    font-size: 10px !important;
+}
+
+.parent{
+    margin: 0 auto; 
+
+}
+
+.active{
+    background-color:#FF7F5C !important
+}
+.nav-item a{
+    color:black;
+    /* transform-case */
+}
+
+
+/* Ensure input width and size stay consistent */
+input[type="text"], input[type="date"] {
+    width: 100%; /* Ensure it fills the container */
+    padding: .375rem .75rem; /* Consistent padding */
+    font-size: 1rem; /* Keep the font size consistent */
+  }
+  
+  /* Optional: Adjust the height if necessary */
+  input.form-control-md {
+    height: calc(1.5em + .75rem + 2px); /* Adjust based on your design */
+  }
+
+
+  
+.child{
+    font-size: 10px;
+}  

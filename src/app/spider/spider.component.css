@@ -1,0 +1,37 @@
+
+  .header{
+    text-align: center;
+  }
+
+  .header img{
+    width: 300px;
+  }
+  .station img{
+    width: 30px;
+  }
+  .progress{
+    height:6px;
+    background-color: #F4DBD4;
+  }
+  .progress-bar{
+    width: 50%;
+    height:6px;
+    background-color: #FF7F5C !important;
+  }
+  .text{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .empty{
+    width: 0%;
+  }
+  .last{
+    background-color: #B9CDE2;
+  }
+
+  @media screen and (max-width: 688px){
+    .bars{
+      scale: .9;
+      margin: 0 3rem;
+    }
+  }

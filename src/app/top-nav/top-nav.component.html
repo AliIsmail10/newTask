@@ -1,0 +1,72 @@
+<div class="container my-3">
+    <div class="row  justify-content-center align-items-center">
+      
+      <!-- First Column -->
+      <div class="col-md-2 d-flex justify-content-center">
+        <div class="py-3 d-flex align-items-center gap-2">
+          <i class="fas fa-circle dot mt-3"></i>
+
+          <img src="./assets/img/station.PNG" class="w-25" alt="Station Image">
+          <p class="fs-2 mb-0">2/3</p>
+            <p class="lead fs-6 mb-0">Monitored <br> Stations</p>
+        </div>
+      </div>
+  
+      <!-- Second Column -->
+      <div class="col-md-2 d-flex justify-content-center">
+        <div class="py-3 d-flex align-items-center gap-2">
+          <i class="fas fa-circle dot mt-3"></i>
+          <i class="fas fa-rotate-right fs-2 fw-light text-muted"></i>
+            <p class="fs-2 mb-0">20<small>s</small></p>
+            <p class="lead fs-6 mb-0 child">Last <br> Update</p>
+        </div>
+      </div>
+  
+      <!-- Navigation Section -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <ul class="nav nav-pills bg-body-secondary  rounded-pill" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active rounded-pill" id="pills-home-tab" data-bs-toggle="pill" href="#today" role="tab" aria-controls="pills-home" aria-selected="true">Today</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link rounded-pill" id="pills-profile-tab" data-bs-toggle="pill" href="#yesterday" role="tab" aria-controls="pills-profile" aria-selected="false">Yesterday</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" href="#lastWeek" role="tab" aria-controls="pills-contact" aria-selected="false">Last Week</a>
+          </li>
+        </ul>
+      </div>
+      
+
+      <div class="col-md-2 d-flex justify-content-center  my-3 my-md-0">
+            <div class="form-floating d-flex align-items-center gap-2">
+              <i class= "dot fas fa-play"></i>
+              <div class="form-floating">
+                <input class="form-control form-control-md" type="text" placeholder="Start time" id="start-time" onfocus="this.type='date'" onblur="if(this.value==''){this.type='text'}" 
+               
+                >
+                <label for="start-time">Start <small class="text-muted ">date-time</small> </label>
+              </div>
+              
+
+          </div>
+
+      </div>
+
+      
+      <div class="col-md-2 d-flex justify-content-center">
+        <div class="form-floating d-flex align-items-center gap-2">
+          <i class="fas fa-square dot"></i>
+          <div class="form-floating">
+            <input class="form-control form-control-md" type="text" placeholder="Start time" id="start-time" onfocus="this.type='date'" onblur="if(this.value==''){this.type='text'}">
+            <label for="start-time">End <small class="text-muted ">date-time</small></label>
+          </div>
+          
+      </div>
+  </div>
+      
+    
+  
+    </div>
+  </div>
+  

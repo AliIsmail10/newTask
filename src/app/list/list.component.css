@@ -1,0 +1,146 @@
+/* Nav Pills */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-color:#FF7F5C !important
+}
+/* Hide all tab panes */
+.tab-pane {
+  display: none !important;
+}
+
+/* Show only the active tab pane */
+.tab-pane.active {
+  display: block !important;
+  row-gap: 20px !important;
+  margin:40px;
+}
+
+.nav-item a{
+  color:black;
+  /* transform-case */
+}
+.nav-link {
+  color: black !important; /* Default color for inactive tabs */
+  font-size:13px
+}
+
+.nav-link.active {
+  color: white !important; /* Color for active tab */
+}
+/* Chart Container */
+.chart-container {
+    margin: auto;
+    padding: 20px;
+    max-width: 800px; /* Uncomment if needed */
+}
+
+.chart {
+    height: 350px;
+}
+
+/* Dropdown Menu Customization */
+.dropdown-menu {
+    position: absolute !important;
+    /* width: 6rem !important; */
+    top: -2rem !important;
+    left: -25rem !important;
+    margin: 0;
+    transform: none;
+    /* min-width: 10rem; */
+    font-size: 12px;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #FF7F5C !important;
+}
+.dropdown-menu-custom {
+    min-width: 25rem;
+    padding: 10px;
+}
+
+/* Dropdown Links */
+.links {
+    cursor: pointer;
+}
+
+.dropdown-item {
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* Item Image */
+.item img {
+    width: 45px;
+}
+
+/* Data Text */
+.data {
+    font-size: 12px;
+}
+
+/* Fixed Section */
+.fixed {
+    height: auto;
+    background-color: red;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 900px) {
+    .chart{
+        height:500px !important;
+        margin: 0 auto;
+      }
+      
+      .data-item{
+        width: 70%;
+        margin: 1rem auto;
+      }
+    .progress {
+display: none;
+    }
+    .dropdown-menu {
+        position: absolute !important;
+        width:10rem;
+        top: -1.5rem !important; 
+        left: -2rem !important;
+        margin: 0;
+        transform: none; 
+        min-width:25rem; 
+        font-size:12px;
+      }
+     
+      .center{
+        justify-content: center !important;
+        align-items: center !important;
+      }
+      .chart{
+        align-items: center !important;
+        justify-content: center !important;
+    
+      }
+    
+}
+
+
+
+/* Font and Progress Styles */
+.fs-6 {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #838080 !important;
+}
+
+/* Progress Bar */
+.progress {
+    position: absolute;
+    rotate: 90deg;
+    top: 9rem;
+    right: -24rem;
+    left: 17rem;
+    height: 6px;
+    background-color: #F4DBD4;
+    scale: 0.45;
+}
+
+.progress-bar {
+    width: 75%;
+    height: 6px;
+    background-color: #FF7F5C !important;
+}

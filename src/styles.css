@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color:#f6f6f7;
+}
+
+.dot{
+    color:#FF7F5C;
+      font-size:10px   
+}
+.dot2{
+    color: #1FD1C8;
+    font-size:12px
+}
+.dot3{
+    color:#FF7F5C;
+    font-size:12px
+}
+

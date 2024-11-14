@@ -1,0 +1,12 @@
+.parent{
+    width:4rem;
+    
+    background-color: #FF7F5C;
+    border-start-end-radius:40px; 
+    height: 100vh;
+
+}
+.nav a {
+
+    color:#ffff !important
+}
