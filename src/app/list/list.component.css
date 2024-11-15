@@ -18,14 +18,7 @@
   color:black;
   /* transform-case */
 }
-.nav-link {
-  color: black !important; /* Default color for inactive tabs */
-  font-size:13px
-}
 
-.nav-link.active {
-  color: white !important; /* Color for active tab */
-}
 /* Chart Container */
 .chart-container {
     margin: auto;

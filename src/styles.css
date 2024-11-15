@@ -17,3 +17,15 @@ body{
     font-size:12px
 }
 
+.small{
+    font-size:11px !important
+}
+
+.nav-link {
+    color: black !important; /* Default color for inactive tabs */
+    font-size:13px
+  }
+  
+  .nav-link.active {
+    color: white !important; /* Color for active tab */
+  }
